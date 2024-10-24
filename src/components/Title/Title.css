@@ -1,0 +1,23 @@
+.mainbody-title-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    color: rgb(97, 245, 102); 
+    /* margin-right: 50%; */
+    margin-bottom: 20px;
+    /* border: 1px solid white; */
+    /* font-family: sans-serif; */
+}
+
+@media (max-width: 1024px) {
+    .mainbody-title-container {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .mainbody-title-container{
+        font-size: 1.3rem;
+    }
+}

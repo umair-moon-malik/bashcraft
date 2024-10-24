@@ -1,0 +1,107 @@
+.section1-content {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  position: absolute;
+  height: 80vh;
+  top: 16vh;
+}
+
+.container-wrapper {
+  display: flex;
+}
+
+.section1-content-left {
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 78vh;
+  height: fit-content;
+  width: 50vw;
+  /* border: 1px solid white; */
+  color: white;
+}
+
+/* animated text styling are in animateText.css */
+
+.bashcraft-description {
+  margin: 60px;
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: rgba(217, 234, 210, 0.941);
+  text-align: justify;
+}
+
+.section1-content-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 78vh;
+  height: fit-content;
+  width: 50vw;
+  /* border: 1px solid white; */
+  color: white;
+}
+
+.section1-content-right img {
+  width: 60%;
+  border-radius: 50%;
+  opacity: 50%;
+  box-shadow: 0 10px 20px rgba(245, 218, 122, 0.3);
+  transition: box-shadow 0.3s ease, width 0.3s ease;
+}
+
+.section1-content-right img:hover {
+  box-shadow: 0 20px 50px rgba(245, 218, 122, 0.4);
+  width: 62%;
+}
+
+.empty-div {
+  min-height: 100vh;
+  min-width: 100vw;
+  height: inherit;
+  margin-bottom: 20vh;
+}
+
+@media (max-width: 1024px) {
+
+    .section1-content {
+        min-width: 100vw;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .container-wrapper {
+        flex-direction: column;
+        /* align-items: center; */
+
+    }
+
+    .section1-content-left {
+        width: 100vw;
+        padding: 20px;
+    }
+
+    .bashcraft-description {
+        margin: 0;
+        padding: 0;
+    }
+
+    .section1-content-right{
+        display: none;
+    }
+
+    .empty-div {
+        margin: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .bashcraft-description {
+        font-size: medium;
+    }
+}
+
+
+

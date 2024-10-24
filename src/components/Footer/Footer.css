@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,400;0,900;1,100&display=swap');
+
+
+.footer-wrapper {
+    margin-top: 60vh;
+    width: 100vw;
+    min-height: 40vh;
+    background-color: rgb(36, 40, 32);
+}
+
+.footer-heading{
+    
+    font-size: 4rem;
+    margin-left: 30px;
+    color: rgba(97, 245, 102, 0.71); 
+    letter-spacing: 4px;
+    font-family: sans-serif;
+}
+
+.footer-links-wrapper {
+    /* height: ; */
+}
