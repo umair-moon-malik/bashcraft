@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import "./Header.css";
 import Logo from "../../assets/bashcraft-logo.png";
 
-const Header = () => {
+const Header = ({ scrollToSection, heroRef, eventRef, contactusRef }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -35,10 +35,33 @@ const Header = () => {
         <img src={Logo} alt="" className="header-logo-image" />
       </div>
       <div id="header-links-container" className={isOpen ? "open" : ""}>
-        <li className="header-link-items">BashCraft</li>
-        <li className="header-link-items">Events</li>
-        <li className="header-link-items">Contact us</li>
-        {/* <li className="header-link-items">Sign up</li> */}
+        <li
+          onClick={() => {
+            scrollToSection(heroRef);
+            toggleMenu();
+          }}
+          className="header-link-items"
+        >
+          BashCraft
+        </li>
+        <li
+          onClick={() => {
+            scrollToSection(eventRef);
+            toggleMenu();
+          }}
+          className="header-link-items"
+        >
+          Events
+        </li>
+        <li
+          onClick={() => {
+            scrollToSection(contactusRef);
+            toggleMenu();
+          }}
+          className="header-link-items"
+        >
+          Contact us
+        </li>
       </div>
       <div className="hamburger" onClick={toggleMenu}>
         <span></span>
