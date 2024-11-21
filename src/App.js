@@ -1,5 +1,4 @@
 import "./App.css";
-
 import React , { useRef }from "react";
 import Header from "./components/Header/Header";
 import Section1 from "./components/Section1/Section1";

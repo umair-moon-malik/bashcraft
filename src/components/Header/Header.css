@@ -42,9 +42,8 @@
 }
 
 .header-scrolled-bottom {
-    height: 60vh;
-    background-color: rgb(32, 32, 32);
-
+  height: 60vh;
+  background-color: rgb(32, 32, 32);
 }
 
 #header-logo-container {
@@ -129,15 +128,10 @@
   }
   .header-link-items:hover {
     background-color: rgba(33, 59, 14, 0.299);
-
-    
   }
 
   .header-scrolled-bottom {
     height: 12vh;
     background-color: rgb(32, 32, 32);
-
+  }
 }
-}
-
-
